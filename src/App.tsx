@@ -1,11 +1,9 @@
-// src/App.tsx
-
 import { AppBar, Button, Container, Toolbar, Typography } from "@mui/material";
 import React from "react";
-import { useTheme } from "./components/Context/ThemeContext";
+import { useTheme } from "../src/components/Context/ThemeContext";
 import ThemeToggleButton from "./components/ThemeToggleButton";
 
-const App: React.FC = () => {
+const AppBarComponent: React.FC = () => {
   const { mode } = useTheme();
 
   return (
@@ -30,4 +28,4 @@ const App: React.FC = () => {
   );
 };
 
-export default App;
+export default AppBarComponent;

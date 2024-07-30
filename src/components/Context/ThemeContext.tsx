@@ -21,14 +21,18 @@ export const ThemeProviderComponent: React.FC<{ children: ReactNode }> = ({ chil
     palette: {
       mode,
       primary: {
-        main: mode === "light" ? "#1976d2" : "#bb86fc",
+        main: mode === "light" ? "#177245" : "#013220",
       },
       secondary: {
-        main: mode === "light" ? "#dc004e" : "#03dac6",
+        main: mode === "light" ? "#177245" : "#000",
       },
       background: {
-        default: mode === "light" ? "#fafafa" : "#121212",
+        default: mode === "light" ? "#fafafa" : "#000",
         paper: mode === "light" ? "#ffffff" : "#1d1d1d",
+      },
+      text: {
+        primary: mode === "light" ? "#000000" : "#ffffff",
+        secondary: mode === "light" ? "#666666" : "#aaaaaa",
       },
     },
     typography: {

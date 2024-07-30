@@ -10,7 +10,7 @@ const ThemeToggleButton: React.FC = () => {
 
   return (
     <IconButton onClick={toggleMode} color="inherit">
-      {mode === "light" ? <Brightness4 /> : <Brightness7 />}
+      {mode === "light" ? <Brightness7 /> : <Brightness4 />}
     </IconButton>
   );
 };
